@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.8.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.0.0'
+    testImplementation group: 'org.testng', name: 'testng', version: '7.10.2'
+
+}
+
+test {
+    useTestNG()
+}
